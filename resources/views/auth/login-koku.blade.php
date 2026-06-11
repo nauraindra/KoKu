@@ -8,7 +8,8 @@
     <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/koku.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/koku.css') }}"> --}}
+    <link rel="stylesheet" href="/css/koku.css">
 </head>
 <body class="login-body">
     <div class="login-wrapper">
