@@ -16,6 +16,10 @@ class AppServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
+        if (app()->environment('production')) {
+            URL::forceScheme('https');
+        }
+
         app('router')->aliasMiddleware('role', RoleMiddleware::class);
         app('router')->aliasMiddleware('track.visit', TrackVisit::class);
 
