@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Http\Middleware\RoleMiddleware;
 use App\Http\Middleware\TrackVisit;
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
